@@ -1,0 +1,28 @@
+body{
+    background-size: cover;
+
+}
+.heading{
+    background:linear-gradient(cyan 0%,white 100%);
+    width: 100%;
+    font-size: 25px;
+}
+.note{
+    font-size: 15px;
+}
+.heading:hover{
+    background: url("stars.gif");
+    color:white;
+    background-color:black;
+}
+.play{
+    background: hotpink;
+    width:100px;
+    font-size:23px;
+    color:black;
+}
+canvas{
+    border:5px solid black;
+    box-shadow:5px 5px 20px rgb(0, 17, 255);
+    border-radius:20px ;
+}
