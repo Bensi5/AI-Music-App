@@ -16,13 +16,14 @@ body{
     background-color:black;
 }
 .play{
-    background: hotpink;
+    background: rgb(0, 0, 0);
     width:100px;
     font-size:23px;
-    color:black;
+    color:rgb(255, 255, 255);
 }
 canvas{
     border:5px solid black;
     box-shadow:5px 5px 20px rgb(0, 17, 255);
     border-radius:20px ;
+    margin-top:140px;
 }
