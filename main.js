@@ -5,6 +5,7 @@ leftWristX = 0;
 rightWristX = 0;
 rightWristY = 0;
 scoreLeftWrist = 0;
+scorerightWrist = 0;
 status1 = "";
 status2 = "";
 function preload() {
@@ -32,7 +33,17 @@ function draw() {
         song2.stop();
         if (status1 == false) {
             song1.play();
+            console.log("pretty girl");
             document.getElementById("song").innerHTML = "Playing Pretty girl";
+        }
+    }
+    if (scorerightWrist > 0.2) {
+        circle(rightWristX.rightWristY, 20);
+        song1.stop();
+        if (status2 == false) {
+            song2.play();
+            console.log("playing beliver");
+            document.getElementById("song").innerHTML = "Playing Beliver";
         }
     }
 }
@@ -54,5 +65,8 @@ function getposes(results) {
 
         scoreLeftWrist = results[0].pose.keypoints[9].score;
         console.log('score left wrist = ' + scoreLeftWrist);
+
+        scorerightWrist = results[0].pose.keypoints[10].score;
+        console.log("score right wrist =" + scorerightWrist)
     }
 }
